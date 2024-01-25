@@ -48,7 +48,7 @@ if ($res->num_rows > 0) {
                                 <a class="btn btn-primary col-md-12 mb-2 modal-profile-cam btn-large" href="#modalPPCapture">
                                     <i class="fas fa-camera"></i>
                                 </a>
-                                <input type="file" id="guard_profile_picx_update" name="guard_profile_picx_update" style="display:none"/>
+                                <input type="file" id="guard_profile_picx_update" accept="image/*" name="guard_profile_picx_update" style="display:none"/>
                                 <input type="hidden" name="guard_id" id="guard_id" value="<?= $row['guard_id'] ?>" />
                                 <input type="hidden" name="gname" id="gname" value="<?= $row['guard_firstname']." ".$row['guard_lastname'];?>" />
                                 <input type="hidden" name="gphone" id="gphone" value="<?= $row['phone'] ?>" />

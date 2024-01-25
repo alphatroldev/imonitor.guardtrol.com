@@ -4363,7 +4363,25 @@
     $('#guard_profile_picx_update').change(function(e){
         e.preventDefault();
         var _form = $("#guard_profile_upload")[0];
-
+        //check file size
+        const input = document.getElementById('guard_profile_picx_update');
+        if (input.files && input.files[0]) {
+            const imageFile = input.files[0];
+            const imageSizeInBytes = imageFile.size;
+            const imageSizeInKB = imageSizeInBytes / 1024;
+    
+            // Set your maximum allowed size (in kilobytes)
+            const maxAllowedSize = 1024*.1; // max sizd: 3 MB
+    
+            if (imageSizeInKB > maxAllowedSize) {
+                $.alert({title: 'Warning!', content: 'image exceeds the allowed file size of 3MB let\'s try that again', type: 'red', typeAnimated: true,});
+                
+                // Optionally, clear the file input to prevent uploading the image
+                input.value = '';
+                return;
+            }
+        }
+       // return
         $.ajax({
             url: "update-guard-pp-by-id", type: "POST",
             dataType: "JSON",
@@ -4388,6 +4406,7 @@
             }
         });
     });
+  
 
     $('#w1_guard_id_front').change(function(e){
         e.preventDefault();
