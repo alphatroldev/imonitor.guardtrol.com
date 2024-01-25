@@ -3590,7 +3590,7 @@
             extra_duty_remark:"required",
             extra_duty_beat_id: "required",
             extra_duty_guard_replace: "required",
-            extra_duty_No_Of_Days: {required:true, digits:true},
+            extra_duty_No_Of_Days: {required:true, digits:false},
         },
         messages: {
             offense_title: "Required",
