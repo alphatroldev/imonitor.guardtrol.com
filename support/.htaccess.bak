@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{index.php} !-f
+#RewriteRule ^edit-support/([a-zA-Z0-9-]*)$ edit-support.php?s_id=$1 [NC,L]
+#RewriteRule ^edit-company/([a-zA-Z0-9-]*)$ edit-company.php?c_id=$1 [NC,L]
+
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteCond %{index.php} !-f
+
+RewriteRule ^edit-staff/([a-zA-Z0-9-]*)$ edit-staff.php?staff_id=$1 [NC,L]
+RewriteRule ^edit-role/([a-zA-Z0-9-]*)$ edit-role.php?role_sno=$1 [NC,L]
+RewriteRule ^edit-shift/([a-zA-Z0-9-]*)$ edit-shift.php?shift_id=$1 [NC,L]
+RewriteRule ^edit-penalty/([a-zA-Z0-9-]*)$ edit-penalty.php?offense_id=$1 [NC,L]
+RewriteRule ^incident/([a-zA-Z0-9-]*)$ incident.php?incident_id=$1 [NC,L]
+
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

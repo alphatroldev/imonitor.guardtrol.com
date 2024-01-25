@@ -1,0 +1,10 @@
+{
+    "require": {
+		"firebase/php-jwt": "^5.0",
+		"ramsey/uuid": "^4.0",
+      "ext-json": "*",
+      "ext-apache": "*",
+      "ext-curl": "*",
+      "ext-mysqli": "*"
+    }
+}
