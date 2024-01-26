@@ -43,6 +43,11 @@
                                             <option value="Deduct days worked">Deduct days worked</option>
                                             <option value="Flat Amount">Flat Amount</option>
                                             <option value="Permanent dismissal">Permanent dismissal</option>
+                                            <option value="Confiscation/Seizure/Forfeiture of Item">Confiscation/Seizure/Forfeiture of Item</option>
+                                            <option value="Warning">Warning</option>
+                                            <option value="Suspension">Suspension</option>
+                                            <option value="Prosecution">Prosecution</option>
+
                                         </select>
                                     </div>
                                 </div>
