@@ -10,9 +10,9 @@ class Database {
     public function connect(){
         //variable initialization
         $this->hostname = 'localhost';
-        $this->dbname = 'guardtrol';
-        $this->username = 'root';
-        $this->password = '';
+        $this->dbname = 'guardtro_imonitor_db';
+        $this->username = 'guardtro_imonutor_usr';
+        $this->password = 'g#Y9eXACmQI*';
 
         $this->conn = new mysqli($this->hostname,$this->username,$this->password,$this->dbname);
         if ($this->conn->connect_errno) {
